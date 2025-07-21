@@ -1,0 +1,113 @@
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* Form elements */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Buttons */
+.dark button.btn-primary {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.dark button.btn-secondary {
+  background-color: #4b5563;
+  color: #ffffff;
+}
+
+/* Cards */
+.dark .card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+/* Tables */
+.dark table {
+  border-color: #374151;
+}
+
+.dark th {
+  background-color: #111827;
+}
+
+.dark tr:nth-child(even) {
+  background-color: #1f2937;
+}
+
+.dark tr:hover {
+  background-color: #374151;
+}
+
+/* Modals */
+.dark .modal {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .modal-header {
+  border-bottom-color: #374151;
+}
+
+.dark .modal-footer {
+  border-top-color: #374151;
+}
+
+/* Dropdowns */
+.dark .dropdown-menu {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .dropdown-item:hover {
+  background-color: #374151;
+}
+
+/* Alerts */
+.dark .alert-info {
+  background-color: #1e3a8a;
+  border-color: #1e40af;
+  color: #bfdbfe;
+}
+
+.dark .alert-success {
+  background-color: #064e3b;
+  border-color: #065f46;
+  color: #a7f3d0;
+}
+
+.dark .alert-warning {
+  background-color: #78350f;
+  border-color: #92400e;
+  color: #fef3c7;
+}
+
+.dark .alert-danger {
+  background-color: #7f1d1d;
+  border-color: #991b1b;
+  color: #fecaca;
+}
+
+/* Transitions for theme switching */
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

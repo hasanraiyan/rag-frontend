@@ -1,0 +1,172 @@
+======================================================================
+==          OmniCorp Global Operations & Policy Manual (GOPM)         ==
+======================================================================
+Document Version: 8.7
+Last Comprehensive Review: October 15, 2023
+Owner: Office of the COO
+Status: ACTIVE - For Internal Use Only
+
+---
+--- PREAMBLE & PURPOSE ---
+---
+This Global Operations & Policy Manual (GOPM) serves as the central source of truth for all OmniCorp employees worldwide. It is a living document intended to outline our operational procedures, employment policies, company values, and the systems we use to achieve our mission. This manual is not an employment contract but a guide to ensure consistency, fairness, and efficiency across the organization. All employees are expected to familiarize themselves with its contents and adhere to the policies herein. For any clarifications, please file a ticket with the relevant department via the 'Helios' internal portal.
+
+=========================================================
+==        SECTION 1: COMPANY CULTURE & CONDUCT         ==
+=========================================================
+
+---
+--- 1.1: Our Mission & Core Values ---
+---
+OmniCorp's mission is to "Pioneer scalable solutions that connect the world." This is guided by our four core values, The "4 C's":
+1.  **Customer-Centricity:** We place the customer at the heart of every decision, product, and interaction.
+2.  **Courageous Innovation:** We take calculated risks and are not afraid to challenge the status quo to find better ways.
+3.  **Candid Collaboration:** We communicate with transparency, honesty, and respect, even when it's difficult.
+4.  **Complete Ownership:** We are accountable for our actions and their outcomes, from the initial concept to the final result.
+
+---
+--- 1.2: Code of Professional Conduct ---
+---
+All employees must maintain the highest standards of professional and ethical conduct. This includes, but is not limited to:
+-   Treating all colleagues, clients, and partners with respect.
+-   Upholding OmniCorp's commitment to a harassment-free and discrimination-free workplace.
+-   Maintaining the confidentiality of proprietary company information, client data, and employee records.
+-   Avoiding any conflicts of interest, real or perceived. Any potential conflict must be disclosed to your manager and the People & Culture department immediately.
+
+Violations of the Code of Conduct can lead to disciplinary action, up to and including termination of employment.
+
+=========================================================
+==      SECTION 2: EMPLOYMENT & WORKPLACE POLICIES     ==
+=========================================================
+
+---
+--- 2.1: Work Hours & Remote Work Framework ---
+---
+OmniCorp operates on a Hybrid "Flex-Work" Model.
+-   **Core Collaboration Hours:** All employees, regardless of location, are expected to be available for synchronous communication and meetings between 10:00 AM and 4:00 PM in their primary team's time zone (e.g., 10 AM - 4 PM PST for US West Coast teams).
+-   **On-Site & Remote Days:** Employees designated as "Hybrid" are expected to be in their assigned office a minimum of two (2) designated "anchor days" per week, typically Tuesday and Thursday, to foster in-person collaboration. Employees designated as "Fully Remote" are not required to come into an office but may be required to travel for quarterly team meetings.
+-   **Time Tracking:** All non-exempt (hourly) employees are required to accurately log their work hours daily using the "Chronos" timekeeping system, accessible via the employee dashboard.
+
+---
+--- 2.2: Compensation & Performance ---
+---
+-   **Pay Schedule:** Salaries are paid bi-weekly on the 15th and the last business day of each month via direct deposit.
+-   **The Ascent Program (Performance Reviews):** Performance reviews are conducted semi-annually. The "Mid-Year Check-in" occurs in June, and the "End-of-Year Impact Review" occurs in December. Goals are set and tracked in our HRIS, "Workday."
+-   **Bonuses:** Annual performance bonuses are discretionary and based on a combination of company performance, departmental success, and individual contributions as measured in the Ascent Program. They are not guaranteed.
+
+=========================================================
+==              SECTION 3: BENEFITS & LEAVE            ==
+=========================================================
+
+---
+--- 3.1: Paid Time Off (PTO) ---
+---
+OmniCorp believes in the importance of rest and offers a generous PTO accrual policy.
+-   **Accrual Rates:**
+    -   0-2 years of service: 1.25 days per month (15 days/year)
+    -   2-5 years of service: 1.67 days per month (20 days/year)
+    -   5+ years of service: 2.08 days per month (25 days/year)
+-   **Requesting PTO:** All PTO requests must be submitted and approved by your manager via Workday at least two (2) weeks in advance for requests of 3 or more consecutive days. For 1-2 days, one week's notice is preferred.
+-   **Rollover Policy:** Employees may roll over a maximum of 40 hours (5 days) of unused PTO into the next calendar year. Any excess balance is forfeited on January 1st.
+
+---
+--- 3.2: Other Leave Policies ---
+---
+-   **Sick Leave:** 10 paid sick days are granted annually. These do not accrue and cannot be rolled over.
+-   **Parental Leave:** We offer 16 weeks of fully paid leave for the primary caregiver and 6 weeks of fully paid leave for the secondary caregiver, to be taken within one year of a child's birth or adoption.
+-   **Bereavement Leave:** Up to 5 days for the loss of an immediate family member (spouse, parent, child, sibling) and 2 days for an extended family member.
+
+---
+--- 3.3: Stipends & Perks ---
+---
+-   **Home Office Stipend:** New remote and hybrid employees receive a one-time, taxable $750 stipend to set up a productive home workspace. This is processed in your first paycheck.
+-   **Wellness Stipend:** A $100 monthly (taxable) stipend is available for gym memberships, fitness apps, or mental health services. Submit receipts for reimbursement via the "Expensify" platform.
+-   **Professional Development Fund:** Employees can request up to $2,500 per year for approved courses, certifications, and conferences related to their role. Requires manager and department head approval.
+
+=========================================================
+==         SECTION 4: IT, SECURITY & ASSET USE         ==
+=========================================================
+
+---
+--- 4.1: Acceptable Use Policy (AUP) ---
+---
+Company-provided assets, including laptops, phones, and software accounts (e.g., Slack, Google Workspace), are for business purposes. Incidental personal use is permitted but should not interfere with work, consume significant resources, or violate any other policies. Prohibited activities include illegal acts, running a personal business, and transmitting offensive or harassing material.
+
+---
+--- 4.2: Password & Security Protocols ---
+---
+-   **Password Complexity:** All system passwords must be a minimum of 14 characters and include an uppercase letter, a lowercase letter, a number, and a special symbol (!, @, #, $, etc.).
+-   **Password Manager:** All employees are required to use the company-provided password manager, "1Password," for storing and generating all work-related credentials.
+-   **Multi-Factor Authentication (MFA):** MFA must be enabled on all supported platforms, including Google Workspace, Slack, and Workday.
+-   **Device Security:** Company-issued laptops must be encrypted (FileVault for macOS, BitLocker for Windows) and have screen lock enabled after 5 minutes of inactivity.
+
+=========================================================
+==        SECTION 5: OPERATIONAL WORKFLOWS & PROCESSES        ==
+=========================================================
+
+---
+--- 5.1: Expense & Reimbursement ---
+---
+The official platform for all expense reporting is **Expensify**.
+-   **Submission Deadline:** All expense reports must be submitted within 30 days of the expenditure.
+-   **Pre-Approval:** Any single purchase or expense exceeding $500 USD (or local equivalent) requires pre-approval from your direct manager via email or a comment in Expensify.
+-   **Required Documentation:** An itemized receipt is required for all expenses. For meals with clients, you must list the names of all attendees and the business purpose.
+-   **Reimbursement Timeline:** Approved expense reports are processed and paid out with the next bi-weekly payroll cycle.
+
+---
+--- 5.2: Official Corporate Travel Policy ---
+---
+All travel must be booked through our corporate travel platform, **TripActions**.
+-   **Air Travel:** Employees must book economy class for all domestic flights and any international flights under 6 hours in duration. Business class is permitted for intercontinental flights longer than 6 hours.
+-   **Accommodation:** Use preferred hotels in TripActions when available. The standard nightly hotel cap is $350 USD in major metro areas and $225 USD elsewhere, unless pre-approved.
+-   **Ground Transportation:** Use standard ride-sharing services (UberX, Lyft) or rental cars from approved vendors. Luxury services (Uber Black, etc.) are not reimbursable without senior director approval.
+-   **Meals Per Diem:** A per diem of $75/day is provided for meals and incidentals during overnight travel. You do not need to submit individual food receipts if you stay within this limit.
+
+---
+--- 5.3: Cross-Departmental Service Requests ---
+---
+To ensure requests are tracked and properly resourced, please use the designated systems. **Requests via Slack DM or email will be rerouted to the proper channel.**
+
+-   **IT Support:** For all IT issues (hardware, software, access), file a ticket in the **Jira Service Desk** under the "IT Support" project.
+-   **Design & Creative Asset Requests:** To request marketing collateral, social media graphics, or sales deck updates, you must submit a **"Creative Brief"** through the Marketing project in Asana.
+    -   **Step 1:** Navigate to the "Marketing & Comms" project in Asana.
+    -   **Step 2:** Use the "New Creative Request" task template.
+    -   **Step 3:** Fill out all required fields, including asset type, target audience, key message, and desired deadline. **The design team requires final, approved copy before beginning work.**
+    -   **SLA:** Standard turnaround for social graphics is 3 business days. Sales collateral requires a minimum of 7 business days. Complex projects like whitepapers require a 3-week lead time.
+
+---
+--- 5.4: Customer Support & Refund Protocols ---
+---
+Our customer relationship is our most valuable asset. The following protocols are managed within our CRM (**Salesforce**) and support platform (**Zendesk**).
+
+-   **Standard Refund Policy:** OmniCorp offers a **30-day money-back guarantee** for all **new** SaaS product subscriptions. This applies only to the customer's first-ever purchase. It does not apply to renewals, hardware, or professional service fees.
+-   **How to Process a Refund:**
+    1.  Verify eligibility in Salesforce by checking the 'Initial Subscription Date'.
+    2.  Confirm with the customer via a standardized Zendesk macro that they understand the refund will result in immediate termination of service.
+    3.  Process the refund in the Stripe payment gateway.
+    4.  Log the action in Salesforce on the customer's account page with the reason code "30-Day Guarantee."
+-   **Prorated Refunds for Cancellations:** We **do not** offer prorated refunds for mid-cycle cancellations. A customer's service will remain active until the end of their paid billing period.
+-   **Exceptions:** Any exception to this refund policy (e.g., for a prolonged service outage) requires written approval from a Director of Customer Success. The approval email must be attached to the Salesforce case.
+
+=========================================================
+==                        APPENDIX                       ==
+=========================================================
+
+---
+--- A.1: Glossary of Terms ---
+---
+-   **AUP:** Acceptable Use Policy
+-   **GOPM:** Global Operations & Policy Manual
+-   **HRIS:** Human Resources Information System (our is Workday)
+-   **CRM:** Customer Relationship Management (our is Salesforce)
+-   **SLA:** Service Level Agreement
+-   **Jira:** Project tracking tool for Engineering and IT
+-   **Asana:** Project management tool for Marketing and Business Operations
+
+---
+--- A.2: Departmental Contact Points ---
+---
+-   **People & Culture (HR):** For questions about benefits, leave, performance. File ticket in Helios portal.
+-   **Finance & Payroll:** For questions about paychecks, 401k, expenses. File ticket in Helios portal.
+-   **IT Help Desk:** For hardware/software issues. File ticket in Jira Service Desk.
+-   **Facilities:** For office-related requests. Contact via #office-ops Slack channel.
