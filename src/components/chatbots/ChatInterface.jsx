@@ -47,7 +47,6 @@ import {
 function ChatInterface({ chatbot }) {
   const dispatch = useDispatch();
   const { threads, messages, activeThread, isLoading, isSending } = useSelector((state) => state.chat);
-  const { assignedDocuments, isLoading: isChatbotLoading } = useSelector((state) => state.chatbots);
   
   const [inputMessage, setInputMessage] = useState('');
   const [deleteThreadId, setDeleteThreadId] = useState(null);
@@ -60,18 +59,7 @@ function ChatInterface({ chatbot }) {
   const chatbotId = chatbot?.id;
   const chatThreads = chatbotId ? threads[chatbotId] || [] : [];
   const activeMessages = activeThread ? messages[activeThread.thread_id] || [] : [];
-  
-  // Check if chatbot has documents assigned
-  const [documentsLoaded, setDocumentsLoaded] = useState(false);
-  const chatbotDocuments = chatbotId ? assignedDocuments[chatbotId] : undefined;
-  const hasDocuments = chatbotDocuments ? chatbotDocuments.length > 0 : false;
-  
-  // Track when documents are loaded
-  useEffect(() => {
-    if (chatbotId && assignedDocuments[chatbotId] !== undefined) {
-      setDocumentsLoaded(true);
-    }
-  }, [chatbotId, assignedDocuments]);
+  const hasDocuments = chatbot?.documentIds?.length > 0;
 
   // Fetch threads when component mounts
   useEffect(() => {
@@ -195,22 +183,8 @@ function ChatInterface({ chatbot }) {
     );
   }
 
-  // Show loading state while checking documents
-  if (!documentsLoaded && !isChatbotLoading) {
-    return (
-      <Card className="h-full flex items-center justify-center">
-        <div className="text-center space-y-2">
-          <LoadingSpinner className="w-8 h-8 mx-auto" />
-          <p className="text-gray-600 dark:text-gray-400">
-            Loading chatbot documents...
-          </p>
-        </div>
-      </Card>
-    );
-  }
-
-  // Show disabled state if no documents are assigned after loading
-  if (documentsLoaded && !hasDocuments) {
+  // Show disabled state if no documents are assigned
+  if (!hasDocuments) {
     return (
       <TooltipProvider>
         <Card className="h-full flex items-center justify-center">

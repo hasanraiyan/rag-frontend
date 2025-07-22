@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchChatbot, fetchChatbotDocuments } from '../../store/slices/chatbotSlice';
+import { fetchChatbot } from '../../store/slices/chatbotSlice';
 import { resetChatState } from '../../store/slices/chatSlice';
 import { Button } from '../../components/ui/button';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../../components/ui/tooltip';
@@ -26,19 +26,11 @@ function TestChatPage() {
   // Find the chatbot by ID
   const chatbot = chatbots.find(bot => bot.id === id);
 
-  // Fetch chatbot and its documents if not found in state
+  // Fetch chatbot if not found in state
   useEffect(() => {
-    const loadChatbotData = async () => {
-      if (id) {
-        if (!chatbot) {
-          await dispatch(fetchChatbot(id));
-        }
-        // Always fetch the latest documents when the component mounts or ID changes
-        dispatch(fetchChatbotDocuments(id));
-      }
-    };
-    
-    loadChatbotData();
+    if (id && !chatbot) {
+      dispatch(fetchChatbot(id));
+    }
   }, [dispatch, id, chatbot]);
 
   // Reset chat state when component unmounts
