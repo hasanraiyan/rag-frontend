@@ -59,7 +59,6 @@ function ChatInterface({ chatbot }) {
   const chatbotId = chatbot?.id;
   const chatThreads = chatbotId ? threads[chatbotId] || [] : [];
   const activeMessages = activeThread ? messages[activeThread.thread_id] || [] : [];
-  const hasDocuments = chatbot?.documentIds?.length > 0;
 
   // Fetch threads when component mounts
   useEffect(() => {
@@ -183,72 +182,7 @@ function ChatInterface({ chatbot }) {
     );
   }
 
-  // Show disabled state if no documents are assigned
-  if (!hasDocuments) {
-    return (
-      <TooltipProvider>
-        <Card className="h-full flex items-center justify-center">
-          <div className="text-center space-y-6 p-8 max-w-md">
-            <div className="relative">
-              <Bot className="w-16 h-16 mx-auto text-gray-300 mb-4" />
-              <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center">
-                <AlertTriangle className="w-4 h-4 text-orange-600" />
-              </div>
-            </div>
-            
-            <div className="space-y-3">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Knowledge Base Required
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-                Your chatbot needs at least one document to provide intelligent responses. 
-                Add documents to give {chatbot.name} the knowledge it needs to help users.
-              </p>
-            </div>
 
-            <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-              <div className="flex items-start space-x-3">
-                <FileText className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
-                <div className="text-left">
-                  <h4 className="text-sm font-medium text-orange-800 dark:text-orange-200 mb-1">
-                    What you can add:
-                  </h4>
-                  <ul className="text-xs text-orange-700 dark:text-orange-300 space-y-1">
-                    <li>• PDF documents</li>
-                    <li>• Word documents</li>
-                    <li>• Text files</li>
-                    <li>• Knowledge base articles</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button 
-                onClick={() => window.location.href = `/dashboard/chatbots/${chatbotId}/documents`}
-                className="flex items-center gap-2"
-              >
-                <FileText className="w-4 h-4" />
-                Add Documents
-              </Button>
-              <Button 
-                variant="outline"
-                onClick={() => window.location.href = `/dashboard/chatbots/${chatbotId}/edit`}
-                className="flex items-center gap-2"
-              >
-                <Settings className="w-4 h-4" />
-                Configure Bot
-              </Button>
-            </div>
-
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              Once you add documents, your chatbot will be ready to chat!
-            </p>
-          </div>
-        </Card>
-      </TooltipProvider>
-    );
-  }
 
   return (
     <TooltipProvider>
@@ -259,14 +193,12 @@ function ChatInterface({ chatbot }) {
             {!isSidebarCollapsed && (
               <div className="flex items-center gap-2">
                 <CardTitle className="text-sm sm:text-base">Chat Threads</CardTitle>
-                {!hasDocuments && (
-                  <div className="w-2 h-2 bg-orange-500 rounded-full" title="No documents assigned" />
-                )}
+              
               </div>
             )}
             <div className="flex items-center gap-1 sm:gap-2">
               {!isSidebarCollapsed && (
-                <Button size="sm" onClick={handleCreateThread} disabled={isLoading || !hasDocuments}>
+                <Button size="sm" onClick={handleCreateThread} disabled={isLoading}>
                   <Plus className="w-4 h-4 mr-1" />
                   <span className="hidden sm:inline">New</span>
                 </Button>
@@ -403,13 +335,13 @@ function ChatInterface({ chatbot }) {
                   <Input
                     value={inputMessage}
                     onChange={(e) => setInputMessage(e.target.value)}
-                    placeholder={hasDocuments ? `Message ${chatbot.name}...` : "Add documents to enable chat..."}
-                    disabled={isSending || !hasDocuments}
+                    placeholder={`Message ${chatbot.name}...`}
+                    disabled={isSending}
                     className="flex-1 text-sm sm:text-base"
                   />
                   <Button 
                     type="submit" 
-                    disabled={isSending || !inputMessage.trim() || !hasDocuments}
+                    disabled={isSending || !inputMessage.trim()}
                     className="min-w-[80px] sm:min-w-[100px]"
                     size="sm"
                   >
@@ -427,15 +359,8 @@ function ChatInterface({ chatbot }) {
             <div className="flex-1 flex flex-col items-center justify-center text-center space-y-4 p-6 min-h-[300px]">
               <Sparkles className="w-12 h-12 sm:w-16 sm:h-16 text-blue-400" />
               <h3 className="text-xl sm:text-2xl font-bold">Ready to chat?</h3>
-              <p className="text-gray-500 max-w-md text-sm sm:text-base px-4">
-                {!hasDocuments 
-                  ? `Add documents to ${chatbot.name} before you can start chatting.`
-                  : isSidebarCollapsed 
-                    ? 'Click the arrow to open the sidebar and create a new chat to start conversing.'
-                    : 'Select a thread from the sidebar or create a new one to start conversing with ' + chatbot.name + '.'
-                }
-              </p>
-              <Button onClick={handleCreateThread} disabled={isLoading || !hasDocuments}>
+          
+              <Button onClick={handleCreateThread} disabled={isLoading}>
                 <Plus className="w-4 h-4 mr-2" />
                 New Chat
               </Button>
